@@ -7,7 +7,7 @@ alias n="cd $HOME/notes"
 alias g="cd $HOME/github"
 alias m="cd $HOME/music"
 alias cat="bat"
-alias oc="opencode"
+alias oc="claude"
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
