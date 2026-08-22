@@ -1,5 +1,12 @@
 # dotfiles-omarchy
 
+> [!NOTE]
+> I don't really care about this setup, Omarchy is an amazing linux setup already, so this is less relevant than my MacOS setup.
+>
+> However! This is still fire.
+> Vibe-coded the readme but most code is still human-generated.
+> Enjoy!
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Personal dotfiles for an Omarchy/Hyprland desktop, laid out as [GNU Stow](https://www.gnu.org/software/stow/) packages. Each top-level directory is a package whose contents mirror the target path under `$HOME`.
