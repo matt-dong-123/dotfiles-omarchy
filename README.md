@@ -1,5 +1,7 @@
 # dotfiles-omarchy
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Personal dotfiles for an Omarchy/Hyprland desktop, laid out as [GNU Stow](https://www.gnu.org/software/stow/) packages. Each top-level directory is a package whose contents mirror the target path under `$HOME`.
 
 ## Deploy
