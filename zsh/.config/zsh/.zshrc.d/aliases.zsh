@@ -2,6 +2,7 @@
 alias ls="eza --color=always --icons -a"
 alias f="fastfetch"
 alias v="nvim"
+alias c="cd $HOME/dotfiles-omarchy"
 alias n="cd $HOME/notes"
 alias g="cd $HOME/github"
 alias m="cd $HOME/music"
