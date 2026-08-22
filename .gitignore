@@ -9,6 +9,7 @@
 
 # Shell/runtime state, not config
 **/.zsh_history
+**/fcitx5/conf/cached_layouts
 
 # OS/editor cruft
 .DS_Store
