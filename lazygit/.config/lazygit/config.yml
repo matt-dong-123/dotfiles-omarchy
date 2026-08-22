@@ -1,0 +1,72 @@
+notARepository: skip
+gui:
+    skipNoStagedFilesWarning: false
+    showRandomTip: false
+    commit:
+        signOff: false
+    editor: "nvim"
+    nerdFontsVersion: "3"
+keybinding:
+    files:
+        commitChanges: "C"
+customCommands:
+    # retrieved from: https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium#conventional-commit
+    - key: "c"
+      context: "files"
+      description: "Create new conventional commit"
+      prompts:
+          - type: "menu"
+            key: "Type"
+            title: "Type of change"
+            options:
+                - name: "feat"
+                  description: "A new feature"
+                  value: "feat"
+                - name: "fix"
+                  description: "A bug fix"
+                  value: "fix"
+                - name: "chore"
+                  description: "Other changes that don't modify src or test files"
+                  value: "chore"
+                - name: "refactor"
+                  description: "A code change that neither fixes a bug nor adds a feature"
+                  value: "refactor"
+                - name: "ci"
+                  description: "Changes to CI configuration files and scripts"
+                  value: "ci"
+                - name: "docs"
+                  description: "Documentation only changes"
+                  value: "docs"
+                - name: "perf"
+                  description: "A code change that improves performance"
+                  value: "perf"
+                - name: "revert"
+                  description: "Reverts a previous commit"
+                  value: "revert"
+                - name: "style"
+                  description: "Changes that do not affect the meaning of the code"
+                  value: "style"
+                - name: "test"
+                  description: "Adding missing tests or correcting existing tests"
+                  value: "test"
+                - name: "build"
+                  description: "Changes that affect the build system or external dependencies"
+                  value: "build"
+          - type: "input"
+            title: "Scope"
+            key: "Scope"
+            initialValue: ""
+          - type: "menu"
+            key: "Breaking"
+            title: "Breaking change"
+            options:
+                - name: "no"
+                  value: ""
+                - name: "yes"
+                  value: "!"
+          - type: "input"
+            title: "message"
+            key: "Message"
+            initialValue: ""
+      command: 'git commit -m "{{.Form.Type}}{{ if .Form.Scope }}({{ .Form.Scope }}){{ end }}{{.Form.Breaking}}: {{.Form.Message}}"'
+      loadingText: "Creating conventional commit..."

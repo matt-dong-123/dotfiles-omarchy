@@ -1,0 +1,12 @@
+source "$ZDOTDIR/.zshrc.d/zgenom.zsh"
+source "$ZDOTDIR/.zshrc.d/options/zvm.zsh"
+source "$ZDOTDIR/.zshrc.d/completion.zsh"
+source "$ZDOTDIR/.zshrc.d/history.zsh"
+source "$ZDOTDIR/.zshrc.d/setopts.zsh"
+source "$ZDOTDIR/.zshrc.d/prompt.zsh"
+source "$ZDOTDIR/.zshrc.d/options/fzf.zsh"
+source "$ZDOTDIR/.zshrc.d/aliases.zsh"
+source "$ZDOTDIR/.zshrc.d/widgets.zsh"
+eval "$(zoxide init --cmd cd zsh)"
+
+export PATH="${HOME}/.config/bin:$PATH"

@@ -1,0 +1,14 @@
+--style full
+--ansi
+--prompt '❯ '
+--multi
+--layout reverse
+--border
+--border-label '  FZF '
+--preview '~/.config/bin/fzf-preview.sh {}'
+--color 'border:blue,label:blue'
+--color 'preview-border:magenta,preview-label:magenta'
+--color 'list-border:green,list-label:green'
+--color 'input-border:red,input-label:red'
+--color 'info:bright-black,prompt:red,pointer:green'
+--color 'marker:green,spinner:green,header:green'

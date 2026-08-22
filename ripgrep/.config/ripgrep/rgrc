@@ -1,0 +1,4 @@
+--hidden
+--smart-case
+--fixed-strings
+--glob=!.git/

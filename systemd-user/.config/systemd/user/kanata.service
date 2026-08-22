@@ -1,0 +1,18 @@
+[Unit]
+Description=Kanata keyboard remapper
+Documentation=https://github.com/jtroo/kanata
+After=default.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/kanata
+
+# Security hardening
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+NoNewPrivileges=true
+ReadWritePaths=%h/.config/kanata
+
+[Install]
+WantedBy=default.target   

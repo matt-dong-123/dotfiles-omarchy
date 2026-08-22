@@ -1,0 +1,20 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps ralt lmet lalt
+)
+
+(defalias
+  caps-esc-ctl (tap-hold-press 200 200 esc lctl)
+  ralt-hyper   (tap-hold-press 200 200 lctl (multi lctl lsft lalt lmet))
+)
+
+(deflayer base
+  @caps-esc-ctl
+  @ralt-hyper
+  ;; Swap Meta and Alt
+  lalt  ;; When physical Left Meta is pressed, output Left Alt
+  lmet  ;; When physical Left Alt is pressed, output Left Meta
+)
