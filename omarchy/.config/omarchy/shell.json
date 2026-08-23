@@ -53,6 +53,10 @@
           "id": "omarchy.audio"
         },
         {
+          "id": "io.github.thisisgm.omapods",
+          "hideWhenDisconnected": true
+        },
+        {
           "id": "omarchy.monitor"
         },
         {
