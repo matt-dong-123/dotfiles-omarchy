@@ -8,6 +8,7 @@ alias g="cd $HOME/github"
 alias m="cd $HOME/music"
 alias cat="bat"
 alias oc="claude"
+alias mup="mise upgrade"
 y() {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
     yazi "$@" --cwd-file="$tmp"
