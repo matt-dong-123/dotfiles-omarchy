@@ -49,7 +49,7 @@ o.bind("SHIFT + ALT + K", "Move up", hl.dsp.window.move({ direction = "u" }))
 o.bind("SHIFT + ALT + L", "Move right", hl.dsp.window.move({ direction = "r" }))
 o.bind("SHIFT + ALT + MINUS", "Resize smart -50", hl.dsp.window.resize({ x = -49, y = -50, relative = true }))
 o.bind("SHIFT + ALT + EQUAL", "Resize smart +50", hl.dsp.window.resize({ x = 50, y = 50, relative = true }))
-o.bind("CTRL + ALT + RETURN", "Fullscreen", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
+o.bind("CTRL + ALT + RETURN", "Full width", hl.dsp.window.fullscreen({ mode = "maximized" }))
 
 -- rmpc
 o.bind("SHIFT + SPACE", "Play/Pause Music", hl.dsp.exec_cmd("omarchy-shell -q mpd toggle"))
