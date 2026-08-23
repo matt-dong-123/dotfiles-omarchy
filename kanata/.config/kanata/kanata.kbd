@@ -1,20 +1,26 @@
 (defcfg
   process-unmapped-keys yes
+  concurrent-tap-hold yes
 )
 
 (defsrc
   caps ralt lmet lalt
 )
 
+(defchordsv2
+  (lalt ralt) menu 200 all-released ()
+)
+
 (defalias
   caps-esc-ctl (tap-hold-press 200 200 esc lctl)
   ralt-hyper   (tap-hold-press 200 200 lctl (multi lctl lsft lalt lmet))
+  lalt-swap    lmet 
+  lmet-swap    lalt
 )
 
 (deflayer base
   @caps-esc-ctl
-  @ralt-hyper
-  ;; Swap Meta and Alt
-  lalt  ;; When physical Left Meta is pressed, output Left Alt
-  lmet  ;; When physical Left Alt is pressed, output Left Meta
-)
+  @ralt-hyper    ;; Right Alt: Tap=Ctrl, Hold=Hyper
+  @lmet-swap     ;; Physical Left Meta -> Output Left Alt
+  @lalt-swap     ;; Physical Left Alt -> Output Left Meta
+)   
