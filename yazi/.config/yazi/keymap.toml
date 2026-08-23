@@ -1,0 +1,51 @@
+#:schema https://yazi-rs.github.io/schemas/keymap.json
+
+[mgr]
+
+prepend_keymap = [
+    # Goto
+    { on = [
+        "g",
+        "c",
+    ], run = "cd ~/dotfiles-omarchy", desc = "Goto ~/dotfiles" },
+    { on = [
+        "g",
+        "d",
+    ], run = "cd ~/Downloads", desc = "Goto ~/Downloads" },
+    { on = [
+        "g",
+        ".",
+    ], run = "cd ~/.config", desc = "Goto ~/.config" },
+    { on = [
+        "g",
+        "n",
+    ], run = "cd ~/notes", desc = "Goto notes" },
+    { on = [
+        "g",
+        "m",
+    ], run = "cd ~/Music", desc = "Goto Music" },
+    { on = [
+        "g",
+        "r",
+    ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Goto home of git repo" },
+    { on = [
+        "g",
+        "p",
+    ], run = "cd ~/github", desc = "Goto Projects" },
+
+    # Plugins
+    { on = "l", run = "plugin smart-enter" },
+    { on = [
+        "c",
+        "m",
+    ], run = "plugin chmod", desc = "Chmod on selected files" },
+    { on = "M", run = "plugin mount", desc = "Open mount view" },
+    { on = [
+        "g",
+        "v",
+    ], run = "plugin vcs-files", desc = "Show git file changes" },
+    { on = [
+        "c",
+        "p",
+    ], run = "plugin compress", desc = "Compress selected files" },
+]
