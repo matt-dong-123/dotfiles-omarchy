@@ -55,6 +55,13 @@ o.bind("CTRL + ALT + RETURN", "Fullscreen", hl.dsp.window.fullscreen({ mode = "f
 o.bind("SHIFT + SPACE", "Play/Pause Music", hl.dsp.exec_cmd("omarchy-shell -q mpd toggle"))
 o.bind(mainMod .. " + Q", "Open RMPC", hl.dsp.exec_cmd("omarchy-shell matjam.omajam client"))
 
+-- Misc
+o.bind(mainMod .. " + SPACE", "Open Clipboard", hl.dsp.exec_cmd("omarchy menu clipboard"))
+hl.unbind("SUPER + CTRL + SPACE")
+o.bind(mainMod .. " + B", "Backgrounds", hl.dsp.exec_cmd("omarchy background"))
+o.bind(mainMod .. " + T", "Themes", hl.dsp.exec_cmd("omarchy theme switcher"))
+o.bind("SUPER + CTRL + SPACE", "Emoji Picker", hl.dsp.exec_cmd("omarchy menu emoji"))
+
 -- Apps
 focus_or_launch(mainMod .. " + RETURN", "kitty", "kitty")
 focus_or_launch(mainMod .. " + A", "chromium", "chromium")
