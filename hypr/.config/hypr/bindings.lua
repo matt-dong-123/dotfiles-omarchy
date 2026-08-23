@@ -59,7 +59,7 @@ o.bind(mainMod .. " + Q", "Open RMPC", hl.dsp.exec_cmd("omarchy-shell matjam.oma
 o.bind(mainMod .. " + SPACE", "Open Clipboard", hl.dsp.exec_cmd("omarchy menu clipboard"))
 hl.unbind("SUPER + CTRL + SPACE")
 o.bind(mainMod .. " + B", "Backgrounds", hl.dsp.exec_cmd("omarchy background"))
-o.bind(mainMod .. " + T", "Themes", hl.dsp.exec_cmd("omarchy theme switcher"))
+o.bind(mainMod .. " + T", "Themes", hl.dsp.exec_cmd("omarchy menu toggle theme"))
 o.bind("SUPER + CTRL + SPACE", "Emoji Picker", hl.dsp.exec_cmd("omarchy menu emoji"))
 
 -- Apps
