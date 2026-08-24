@@ -10,3 +10,5 @@ source "$ZDOTDIR/.zshrc.d/widgets.zsh"
 eval "$(zoxide init --cmd cd zsh)"
 
 export PATH="${HOME}/.config/bin:$PATH"
+
+. "$HOME/.local/share/../bin/env"
