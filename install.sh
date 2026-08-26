@@ -49,6 +49,8 @@ PACMAN_PACKAGES=(
 AUR_PACKAGES=(
     kanata-bin
     sesh-bin
+    zathura-git
+    zathura-pdf-mupdf-git
 )
 
 log()  { echo "==> $*"; }
