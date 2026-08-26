@@ -38,6 +38,12 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "io.github.juancasanueva.plugin-manager"
+        },
+        {
+          "id": "bredda.localsend"
+        },
+        {
           "id": "omarchy.agents"
         },
         {
