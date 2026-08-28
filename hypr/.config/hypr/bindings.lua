@@ -66,6 +66,7 @@ o.bind("SUPER + CTRL + SPACE", "Emoji Picker", hl.dsp.exec_cmd("omarchy menu emo
 focus_or_launch(mainMod .. " + RETURN", "kitty", "kitty")
 focus_or_launch(mainMod .. " + A", "chromium", "chromium")
 focus_or_launch(mainMod .. " + G", "Clash", "clash-verge")
+focus_or_launch(mainMod .. " + F", "Nautilus", "nautilus")
 
 hl.window_rule({
     match = { class = "chromium" },
