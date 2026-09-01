@@ -9,7 +9,7 @@ path = "~/Downloads"
 
 [[session]]
 name = "dotfiles"
-path = "~/dotfiles"
+path = "~/dotfiles-omarchy"
 
 [[session]]
 name = "Notes"
